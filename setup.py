@@ -13,8 +13,7 @@ f.close()
 ext1 = Extension(name = 'pyslalib.slalib',
                  include_dirs = ['.'],
                  sources = ['slalib.pyf']+\
-                           glob.glob("*.f")+\
-                           glob.glob("*.F"))
+                           glob.glob("*.[fF]"))
 
 if __name__ == "__main__":
     setup(name = 'pySLALIB',
